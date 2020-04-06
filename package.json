@@ -1,0 +1,23 @@
+{
+  "name": "joking-with-node",
+  "version": "1.0.0",
+  "description": "Just exercises with JS, Node and React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cecostadev/joking-with-node.git"
+  },
+  "author": "Carlos Eduardo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cecostadev/joking-with-node/issues"
+  },
+  "homepage": "https://github.com/cecostadev/joking-with-node#readme",
+  "dependencies": {
+    "http-server": "^0.12.1",
+    "nodemon": "^2.0.2"
+  }
+}
