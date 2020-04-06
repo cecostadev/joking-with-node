@@ -1,10 +1,10 @@
-//Carregando módulo nativo HTTP
+//Carrying HTTP module
 const http = require('http');
 
 
-//Criando objeto do tipo http e disponibilizando req e resp.
+//Creating an object http and declaring request and response
 const server = http.createServer((request, response) =>{
-    //Respondendo Hello Worl para a primeira req.
+    //Sending the response to the browser
     response.writeHead(200, {'Content-Type' : 'text/plain'});
     response.end('Hello World!');
 })
