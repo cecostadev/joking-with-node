@@ -20,3 +20,14 @@ exports.create = function(request, response) {
         }
     });
 }
+
+exports.one = function(request, response) {
+    let phone = new smartphone();
+    smartphone.findById(request.params.id, function(err, product) {
+        if(err) {
+            return send(err);
+        } else {
+            response.send(product);
+        }
+    });
+}

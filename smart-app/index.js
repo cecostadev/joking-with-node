@@ -8,10 +8,11 @@ const mongoose = require('mongoose');
 let url = 'mongodb+srv://cadussb:cadujoga10@smartapp-kcrlu.mongodb.net/test?retryWrites=true&w=majority';
 let mongo = process.env.MONGODB_URI || url;
 
-mongoose.connect(mongo);
+mongoose.connect(mongo, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.Promise = global.Promise;
 
 let db = mongoose.connection;
+
 db.on('error', console.error.bind(
     console, 'Erro no Mongo DB'
 ));
