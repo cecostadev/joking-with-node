@@ -5,7 +5,7 @@ const smartphone = require('./src/routes/smartphone');
 const app = express();
 const mongoose = require('mongoose');
 
-let url = 'mongodb+srv://cadussb:cadujoga10@smartapp-kcrlu.mongodb.net/test?retryWrites=true&w=majority';
+let url = 'mongodb+srv://cadussb:*****@smartapp-kcrlu.mongodb.net/test?retryWrites=true&w=majority';
 let mongo = process.env.MONGODB_URI || url;
 
 mongoose.connect(mongo, { useNewUrlParser: true, useUnifiedTopology: true });
